@@ -3,6 +3,7 @@ from dict_methods import add_item, read_notes, update_recipes, sort_entries, sen
 
 root = tk.Tk()
 root.title("Shopping Cart")
+
 """
 Requirements
 Functionality:
@@ -15,16 +16,26 @@ NO complex features — keep it simple
 
 """
 
-# Create three buttons
-button1 = tk.Button(root, text="Display Cart", command=read_notes)
-button2 = tk.Button(root, text="Add Item", command=add_item)
-button3 = tk.Button(root, text="Sort Items", command=sort_entries)
-# Pack the buttons vertically
-button1.pack()
-button2.pack()
-button3.pack()
 
-lb = tk.Listbox(root)
-lb.pack()
+tk.Label(root, text="Apple").grid(row=0, column=0)
+tk.Label(root, text="Banana").grid(row=1, column=0)
+tk.Label(root, text="Carrot:").grid(row=2, column=0)
+tk.Label(root, text="Corn:").grid(row=3, column=0)
+tk.Label(root, text="Tomato:").grid(row=4, column=0)
+tk.Label(root, text="Grapes:").grid(row=5, column=0)
+
+entry1 = tk.Entry(root)
+entry2 = tk.Entry(root)
+entry3 = tk.Entry(root)
+entry4 = tk.Entry(root)
+entry5 = tk.Entry(root)
+entry6 = tk.Entry(root)
+
+entry1.grid(row=0, column=1)
+entry2.grid(row=1, column=1)
+entry3.grid(row=2, column=1)
+entry4.grid(row=3, column=1)
+entry5.grid(row=4, column=1)
+entry6.grid(row=5, column=1)
 
 root.mainloop()

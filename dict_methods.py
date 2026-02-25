@@ -24,7 +24,7 @@ def read_notes(notes):
     :param notes: iterable of items to add to cart.
     :return: dict - a user shopping cart dictionary.
     """
-
+    
     return dict.fromkeys(notes, 1)
 
 def update_recipes(ideas, recipe_updates):
